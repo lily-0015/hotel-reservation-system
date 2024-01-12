@@ -1,0 +1,25 @@
+type PaymentResponse = record { msg : text; amount : float64 };
+type ReservationPayload = record {
+  room_id : text;
+  check_out_date : nat64;
+  check_in_date : nat64;
+};
+type Room = record {
+  id : text;
+  is_booked : bool;
+  updated_at : opt nat64;
+  room_number : text;
+  price : text;
+  created_date : nat64;
+};
+type RoomPayload = record { room_number : text; price : text };
+type _AzleResult = variant { Ok : vec Room; Err : text };
+service : () -> {
+  addRoom : (RoomPayload) -> (text);
+  checkOutAndPay : (text, text) -> (PaymentResponse) query;
+  deleteRoom : (text) -> (text);
+  getAvailableRooms : () -> (_AzleResult) query;
+  initHotel : (text) -> (text);
+  makeReservation : (ReservationPayload) -> (text);
+  updateRoom : (text, RoomPayload) -> (text);
+}
