@@ -1,9 +1,7 @@
 ### Hotel Reservation System Documentation
 
 #### 1. Introduction
-
-The Hotel Reservation System is implemented in Motoko, a programming language for the Internet Computer blockchain. This system allows the management of hotels, rooms, reservations, and payments.
-
+The Hotel Reservation System is implemented in TypeScript, a popular programming language. This system enables the management of hotels, rooms, reservations, and payments.
 #### 2. Entities
 
 ##### Hotel Entity
