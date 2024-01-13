@@ -114,9 +114,8 @@ The Hotel Reservation System is implemented in Motoko, a programming language fo
 
    ```bash
    git clone https://github.com/lily-0015/hotel-reservation-system.git
-   cd hotel-reservation-system
    ```
-
+   cd hotel-reservation-system
 2. Install project dependencies:
 
    ```bash
